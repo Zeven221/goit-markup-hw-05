@@ -497,7 +497,7 @@ footer p{
 .footer-logo-desc{
     display: flex;
     flex-direction: column;
-    margin-right: 80px;
+    margin-right: 40px;
 }
 .social-media-title{
     font-weight: 500;
