@@ -495,7 +495,9 @@ footer p{
     color: #FFFFFF;
 }
 .footer-logo-desc{
+    display: flex;
     flex-direction: column;
+    margin-right: 80px;
 }
 .social-media-title{
     font-weight: 500;
@@ -531,7 +533,7 @@ footer p{
 }
 .footer-desc{
     display: flex;
-    column-gap: 120px;
+    column-gap: 80px;
     align-items: baseline;
     margin-left: auto;
 }
@@ -789,8 +791,8 @@ footer p{
 }
 
 .user-comment {
+    width: 100%;
     resize: none;
-    width: 360px;
     height: 120px;
     overflow-y: auto;
     border: 1px solid rgba(46, 47, 66,0.4);
