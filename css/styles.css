@@ -535,7 +535,10 @@ footer p{
     display: flex;
     column-gap: 80px;
     align-items: baseline;
-    margin-left: auto;
+}
+.subscribe{
+    margin-left: auto
+
 }
 .subscribe-form{
     display: flex;
