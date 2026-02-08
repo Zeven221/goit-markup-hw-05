@@ -118,14 +118,14 @@ header{
     gap: 76px;
 
 }
-.active-link{
+.nav-active-link{
     position: relative;
 
 }
-#active-link{
+.main-navigation .nav-active-link{
     color: #404bbf
 }
-.active-link::after {
+.nav-active-link::after {
     content: "";
     display: block;
     height: 4px;
@@ -491,6 +491,9 @@ footer p{
 
 
 }
+.footer-desc .social-media-title,.footer-desc .subscribe-title{
+    color: #FFFFFF;
+}
 .footer-logo-desc{
     flex-direction: column;
 }
@@ -529,7 +532,8 @@ footer p{
 .footer-desc{
     display: flex;
     column-gap: 120px;
-    align-items: baseline
+    align-items: baseline;
+    margin-left: auto;
 }
 .subscribe-form{
     display: flex;
@@ -685,8 +689,7 @@ footer p{
     border-radius: 100%;
     background-color: rgba(231, 233, 252, 1);
     position: relative;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    outline: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     
     
@@ -706,13 +709,14 @@ footer p{
 
 }
 .close-button-svg {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: #2E2F42;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 
-    
+  
 }
 
 .modal-window-close-button:hover,.modal-window-close-button:focus{
