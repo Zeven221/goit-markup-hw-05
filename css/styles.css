@@ -572,6 +572,7 @@ footer p{
 /* #region subscribe button */
 .subscribe-button{
     width: 165px;
+    height: 140px;
     background-color: #4D5AE5;
     border-radius: 4px;
     border-color: transparent;
@@ -582,6 +583,11 @@ footer p{
     padding-bottom: 8px;
     padding-top: 8px;
     height: 40px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
 
     
        
@@ -595,7 +601,8 @@ footer p{
     margin-left: 24px;
     flex-direction: column;
     justify-content: flex-end;
-    position: relative;
+
+
     
 
 
@@ -604,10 +611,7 @@ footer p{
 }
 .telegram-icon{
     fill: #FFFFFF;
-    position: absolute;
-    bottom: 0;
-    right: 10px;
-    transform: translateY(-50%);
+    margin-left: 16px;
 
     
 }
@@ -680,6 +684,10 @@ footer p{
     border-radius: 100%;
     background-color: rgba(231, 233, 252, 1);
     position: relative;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+
+    
     
 
     
@@ -687,27 +695,40 @@ footer p{
 }
 .close-modal-form{
     position: absolute;
-    right: -12px;
-    top: 12px;
+    right: 0;
+    top: 0;
     margin-top: 24px;
     margin-right: 18px;
-    transform: translate(-50%, -50%);
     width: 24px;
     height: 24px;
-
-
     
 
-
 }
-.close-button-svg{
+.close-button-svg {
     fill: #2E2F42;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+
     
 }
+
+.modal-window-close-button:hover,.modal-window-close-button:focus{
+    background-color: #404BBF;
+
+
+}
+.modal-window-close-button:hover .close-button-svg,
+.modal-window-close-button:focus .close-button-svg
+{
+    fill: #FFFFFF;
+}
+
+
+    
+    
+
 /* #endregion modal-form */
 /* #region input-icon */
 .field-wrapper-inner{
@@ -861,15 +882,19 @@ footer p{
     
 }
 .custom-checkbox-mark{
-    fill: none;
+    fill: transparent;
+    
 }
 .input-checkbox:checked + .privacy-policy-label .custom-checkbox {
     background-color: #404BBF;
-    fill: #F4F4FD;
+
+
 
 
 }
-
+.input-checkbox:checked + .privacy-policy-label .custom-checkbox-mark{
+    fill: #F4F4FD;
+}
 
 /* #endregion-custom-checkbox */
 /* #endregion modal-window */
