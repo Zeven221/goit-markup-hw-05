@@ -158,13 +158,12 @@ header{
     display: flex;
     gap: 40px;
     justify-content: flex-end;
+    margin-left: auto;
+    font-style: normal
     
 
 }
-address{
-    margin-left: auto;
-    font-style: normal
-}
+
 /* #endregion address */
 /* #endregion header */
 /* #region order-service */
